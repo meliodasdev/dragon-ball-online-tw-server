@@ -6,17 +6,17 @@
   <!-- Server Configuration -->
   <ServerWorker Value="1"/>
   <Server IP="127.0.0.1" Port="50300" />
-  <MySQL Host="localhost" Database="dbotw" User="bruno" Password="brunosamudio" />
+  <MySQL Host="localhost" Database="namedatabase" User="user" Password="pass" />
 
   <!-- Game Data Tables Folder Location -->
   <GameData Path="../Data/" />
 
   <!-- Server List Configuration -->
   <ServerCount value="1" />
-  <Server1 Name="DBOM" Count="1" MaxLoad="100" Private="1">
+  <Server1 Name="Dbo Open" Count="1" MaxLoad="100" Private="1">
     <Channel1 IP="127.0.0.1" Port="50400" MaxLoad="100" />
   </Server1>
-  <Server2 Name="DBOM Alpha" Count="1" MaxLoad="100" Private="0">
+  <Server2 Name="Dbo Private" Count="1" MaxLoad="100" Private="0">
     <Channel1 IP="25.3.53.132" Port="50500" MaxLoad="100" />
   </Server2>
 </CharServer>
