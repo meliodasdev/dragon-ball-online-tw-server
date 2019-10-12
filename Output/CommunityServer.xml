@@ -6,7 +6,7 @@
   <!-- Server Configuration -->
   <ServerWorker Value="1"/>
   <Server ID="1" ChannelID="1" IP="127.0.0.1" Port="50500" />
-  <MySQL Host="127.0.0.1" Database="dbotw" User="bruno" Password="brunosamudio" />
+  <MySQL Host="127.0.0.1" Database="namedatabase" User="user" Password="pass" />
 
   
    <!-- Game Data Tables Folder Location -->
