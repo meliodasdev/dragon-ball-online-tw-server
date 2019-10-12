@@ -6,17 +6,17 @@
   <!-- Server Configuration -->
   <ServerWorker Value="1"/>
   <Server IP="127.0.0.1" Port="50300" />
-  <MySQL Host="127.0.0.1" Database="dbotw" User="root" Password="contraseña" />
+  <MySQL Host="localhost" Database="dbotw" User="bruno" Password="brunosamudio" />
 
   <!-- Game Data Tables Folder Location -->
   <GameData Path="../Data/" />
 
   <!-- Server List Configuration -->
   <ServerCount value="1" />
-  <Server1 Name="Heartless" Count="1" MaxLoad="100" Private="0">
+  <Server1 Name="DBOM" Count="1" MaxLoad="100" Private="1">
     <Channel1 IP="127.0.0.1" Port="50400" MaxLoad="100" />
   </Server1>
-  <Server2 Name="AKCore Alpha" Count="1" MaxLoad="100" Private="0">
-    <Channel1 IP="127.0.0.1" Port="50123" MaxLoad="100" />
+  <Server2 Name="DBOM Alpha" Count="1" MaxLoad="100" Private="0">
+    <Channel1 IP="25.3.53.132" Port="50500" MaxLoad="100" />
   </Server2>
 </CharServer>

@@ -5,8 +5,8 @@
   <LogLevel Value="3"/>
   <!-- Server Configuration -->
   <ServerWorker Value="1"/>
-  <Server ID="1" ChannelID="1" IP="0.0.0.0" Port="50500" />
-  <MySQL Host="127.0.0.1" Database="dbotw" User="root" Password="contraseña" />
+  <Server ID="1" ChannelID="1" IP="127.0.0.1" Port="50500" />
+  <MySQL Host="127.0.0.1" Database="dbotw" User="bruno" Password="brunosamudio" />
 
   
    <!-- Game Data Tables Folder Location -->

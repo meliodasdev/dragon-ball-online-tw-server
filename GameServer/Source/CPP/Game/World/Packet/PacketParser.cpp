@@ -1594,8 +1594,8 @@ void			WorldSession::PacketParser(Packet& packet)
 			map->Remove(_player, false);
 			_player->ClearListAndReference();*/
 			break;
-		}
-		case Opcodes::UG_PARTY_CREATE_REQ: // Create party with name you want
+		} 
+		case Opcodes::UG_PARTY_CREATE_REQ: // Create party with name you want 
 		{
 			sUG_PARTY_CREATE_REQ *req = (sUG_PARTY_CREATE_REQ*)packet.GetPacketBuffer();
 
