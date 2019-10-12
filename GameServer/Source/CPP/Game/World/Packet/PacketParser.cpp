@@ -1595,7 +1595,7 @@ void			WorldSession::PacketParser(Packet& packet)
 			_player->ClearListAndReference();*/
 			break;
 		}
-		case Opcodes::UG_PARTY_CREATE_REQ:
+		case Opcodes::UG_PARTY_CREATE_REQ: // Create party with name you want
 		{
 			sUG_PARTY_CREATE_REQ *req = (sUG_PARTY_CREATE_REQ*)packet.GetPacketBuffer();
 
@@ -1609,6 +1609,19 @@ void			WorldSession::PacketParser(Packet& packet)
 
 			SendPacket((char*)&res, sizeof(sGU_PARTY_CREATE_RES));
 			sLog.outError("GU_PARTY_CREATE_RES");
+			break;
+		}
+		case Opcodes::UG_PARTY_LEAVE_REQ: // Remove the party
+		{
+			sUG_PARTY_LEAVE_REQ* req = (sUG_PARTY_LEAVE_REQ *)packet.GetPacketBuffer();
+
+			sGU_PARTY_LEAVE_RES res;
+			res.wOpCode = GU_PARTY_LEAVE_RES;
+			res.wPacketSize = sizeof(sGU_PARTY_LEAVE_RES) - 2;
+			res.wResultCode = GAME_SUCCESS;
+			sLog.outError("UG_PARTY_LEAVE_REQ");
+			SendPacket((char*)&res, sizeof(sGU_PARTY_LEAVE_RES));
+
 			break;
 		}
 		case Opcodes::UG_PARTY_INVITE_REQ:
