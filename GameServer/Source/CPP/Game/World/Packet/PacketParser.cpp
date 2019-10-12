@@ -1603,11 +1603,11 @@ void			WorldSession::PacketParser(Packet& packet)
 			memset(&res, 0, sizeof(sGU_PARTY_CREATE_RES));
 			res.wOpCode = GU_PARTY_CREATE_RES;
 			res.wPacketSize = sizeof(sGU_PARTY_CREATE_RES) - 2;
-			wcscpy_s(res.wszPartyName, 16 + 1, req->wszPartyName);
+			wcscpy_s(res.wszPartyName, 16 + 1, req->wszPartyName); 
 
 			res.wResultCode = GAME_SUCCESS;
 
-			SendPacket((char*)&res, sizeof(sGU_PARTY_CREATE_RES));
+			SendPacket((char*)&res, sizeof(sGU_PARTY_CREATE_RES)); 
 			sLog.outError("GU_PARTY_CREATE_RES");
 			break;
 		}
@@ -1620,7 +1620,7 @@ void			WorldSession::PacketParser(Packet& packet)
 			res.wPacketSize = sizeof(sGU_PARTY_LEAVE_RES) - 2;
 			res.wResultCode = GAME_SUCCESS;
 			sLog.outError("UG_PARTY_LEAVE_REQ");
-			SendPacket((char*)&res, sizeof(sGU_PARTY_LEAVE_RES));
+			SendPacket((char*)&res, sizeof(sGU_PARTY_LEAVE_RES)); 
 
 			break;
 		}
